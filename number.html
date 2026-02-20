@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div  style="width: 100%;height: 100vh; background-color: black;">
+    <div style="width: 100%; display: flex; justify-content: space-between;">
+    <button style="margin: 40vh 70px;padding: 10px 20px;background-color: cadetblue;border-radius: 4px;box-shadow: 5px 4px 15px cadetblue;color: white;font-size: 20px;" id="btn1">افزایش دهنده</button>
+    <h1 style="background-color: cadetblue;margin: 40vh auto;padding: 10px 20px; border-radius: 3px;box-shadow: 5px 4px 15px cadetblue;color: white;">0</h1>
+    <button style="margin: 40vh 70px;padding: 10px 20px; background-color: cadetblue;border-radius: 4px;box-shadow: 5px 4px 15px cadetblue;color: white;font-size: 20px;;" id="btn2">کاهیش دهنده</button>
+    </div>
+    </div>
+    <script>
+       const btn1 = document.getElementById('btn1');
+       const btn2 = document.getElementById('btn2');
+       const h1 = document.querySelector('h1');
+       let number = 0;
+       btn1.addEventListener("click",()=>{
+        number++
+        h1.textContent = number;
+       });
+       btn2.addEventListener("click",()=>{
+        number--;
+        h1.textContent = number;
+       });
+    </script>
+</body>
+</html>
