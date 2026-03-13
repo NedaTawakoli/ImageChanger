@@ -9,4 +9,4 @@ const person={
     lastName:"naqi",
     age:23
 }
-const {name,lastName,age} = person;
+const {name,lastName,age} = person; 
